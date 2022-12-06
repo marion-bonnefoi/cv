@@ -4,7 +4,7 @@ body{
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-p,a{
+p, a, li{
   font-family: 'Open Sans', sans-serif;
   font-size: 24px;
 }
@@ -44,12 +44,13 @@ a{
 .nom{
   text-align: center;
 }
-header nav{
+nav{
+  z-index: 1;
   position: sticky;
   top: 0;
   background: #41C1BA;
 }
-header nav div{
+ nav div{
     background: #41C1BA;
 }
 footer{
@@ -174,13 +175,6 @@ h1, h2{
 .menu{
   height: 0;
 }
-.logo {
-  position: absolute;
-  right: 15px;
-  font-size: 1.2rem;
-  color: #0e2431;
-}
-
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
 }
@@ -199,4 +193,108 @@ h1, h2{
 
 .nav-container input[type="checkbox"]:checked ~ .logo{
   display: none;
+}
+.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+  .card {
+    width: 85%;
+    flex: 0 0 auto;
+    background: #F2F1EC;
+    border: solid black 3px;
+    border-radius: 20px;
+  }
+  .ombredroite{
+    width: 93%;
+    background: #41C1BA;
+    border-radius: 10px;
+    box-shadow: 23px 25px 14px -1px rgba(98,221,214,0.8);
+-webkit-box-shadow: 23px 25px 14px -1px rgba(98,221,214,0.8);
+-moz-box-shadow: 23px 25px 14px -1px rgba(98,221,214,0.8);
+  }
+.ombregauche{
+  width: 93%;
+  background: #41C1BA;
+  border-radius: 10px;
+  box-shadow: -23px 25px 14px -1px rgba(98,221,214,0.8);
+-webkit-box-shadow: -23px 25px 14px -1px rgba(98,221,214,0.8);
+-moz-box-shadow: -23px 25px 14px -1px rgba(98,221,214,0.8);
+}
+.flexbox{
+  display: inline-flex;
+  justify-content: flex-end;
+}
+h3{
+text-align: center;
+}
+.droite{
+  text-align: right;
+}
+.tabs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tabs input{
+  display: none;
+}
+.tabs label{
+  order: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 7% 15%;
+margin-right: 0.2rem;
+cursor: pointer;
+background-color: #F2F1EC;
+font-weight: bold;
+transition: ease 0.3s;
+}
+.tabs input[type="radio"]:checked + label {
+    background: #62DDD6;
+    border-radius: 10px;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+.tabs .tab {
+    order: 9;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    display: none;
+    padding: 1rem;
+    background: #62DDD6;
+    padding: 20px;
+}
+.tab li img{
+  width: 70px;
+
+}
+.inline li{
+  display: inline-block;
+}
+.pad li{
+  padding: 10px;
+}
+.cheval{
+  color: white;
+  background: url(img/cheval.jpg) no-repeat;
+  background-size: cover;
+}
+.fleur{
+  color: white;
+  background: url(img/fleur.jpg) no-repeat;
+  background-size: cover;
+}
+.menage{
+  background: url(img/menage.jpg) no-repeat;
+  background-size: cover;
+}
+.informatique{
+  color: white;
+  background: url(img/informatique.jpg) no-repeat;
+  background-size: cover;
 }

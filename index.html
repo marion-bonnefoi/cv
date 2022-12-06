@@ -4,21 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title></title>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="navbar">
+    <nav>
+      <div class="navbar">
         <div class="container nav-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-            </div>
-          <div class="logo">
-            <h3 class="menu">Menu</h3>
+          <input class="checkbox" type="checkbox" name="" id="" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
           </div>
           <div class="menu-items">
             <ul>
@@ -31,10 +28,11 @@
             </ul>
           </div>
         </div>
-        </div>
-      </nav>
+      </div>
+    </nav>
+    <header>
       <div class="contact">
-        <h3 class="h3">Contact</h3>
+        <!-- <h3 class="h3">Contact</h3> -->
         <div class="info">
           <a class="tel" href="tel:+0650816494"><img src="img/tel.png" alt=""></a>
           <a class="mail" href="mailto:marion-b-13@live.fr"><img src="img/mail.png" alt=""></a>
@@ -57,15 +55,79 @@
     <main>
       <section id="présentation">
         <h3>Présentation</h3>
+        <div class="ombredroite animate__animated animate__bounce">
+        <p>motiver à approfondir et transmettre mes connaissances, je recherche une entreprise ou je pourrais partager mes connaissances informatique.</p>
+      </div>
       </section>
       <section id="exp.pro">
         <h3>Expérience proféssionnelle</h3>
+        <div class="scrolling-wrapper-flexbox">
+          <div class="card cheval">
+            <h4>Palefrenière</h4>
+            <p>2011</p>
+            <p>(stage)</p>
+            <p>Relais de la Mène</p>
+            <p>- Grimaud (83)</p>
+          </div>
+          <div class="card fleur">
+            <h4>Ouvrière Horticole polyvalente</h4>
+            <p>2015</p>
+            <p>(stage)</p>
+            <p>S.C.R.A.D.H.</p>
+            <p> - Hyères-les-palmier (83)</p>
+          </div>
+          <div class="card menage">
+            <h4>Agent d'entretien</h4>
+            <p>2016</p>
+            <p>(C.D.D)</p>
+            <p>M.D.P.H.</p>
+            <p> - Chanay (01)</p>
+          </div>
+          <div class="card informatique">
+            <h4>Salariée polyvalente</h4>
+            <p>2022-2023</p>
+            <p>C.D.D.I</p>
+            <p>Association Ageval - Atelier numérique</p>
+            <p> - Valenciennes (53)</p>
+          </div>
+        </div>
       </section>
       <section id="competence">
         <h3>Compétences</h3>
+        <div class="tabs">
+          <input type="radio" name="tabs" id="tabun" value="">
+          <label for="tabun">Soft skills</label>
+          <div class="tab pad">
+            <ul>
+              <li>Travailler en équipe</li>
+              <li>Résilience</li>
+              <li>Volonté d'apprendre</li>
+              <li>Esprit critique</li>
+              <li>Présence d'esprit</li>
+            </ul>
+          </div>
+          <input type="radio" name="tabs" id="tabdeux" value="">
+          <label for="tabdeux">Hard skills</label>
+          <div class="tab inline">
+            <ul>
+              <li><img src="img/canva.png" alt=""> </li>
+              <li><img src="img/css.png" alt=""> </li>
+              <li> <img src="img/html.png" alt=""> </li>
+              <li><img src="img/photoshop.png" alt=""> </li>
+              <li><img src="img/trello.png" alt=""> </li>
+            </ul>
+          </div>
+        </div>
       </section>
       <section id="formation">
         <h3>Formation</h3>
+        <div class="flexbox">
+          <div class="droite ombregauche animate__animated animate__backInLeft animate__delay-5s">
+            <h4>BAC S.T.A.V.</h4>
+            <p>2011-2015</p>
+            <p>Lycée agricole Agricampus - Hyères-les-palmier (83)</p>
+          </div>
+        </div>
       </section>
       <section id="realisation">
         <h3>Réalisation</h3>
