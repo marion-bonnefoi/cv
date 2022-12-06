@@ -241,7 +241,6 @@ text-align: center;
   display: none;
 }
 .tabs label{
-  order: 1;
 display: flex;
 justify-content: center;
 align-items: center;
