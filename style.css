@@ -25,10 +25,6 @@ a{
   padding:0px 10px ;
   box-sizing: border-box;
 }
-.lien a{
-  padding: 0px 10px;
-  box-sizing: border-box;
-}
 .mail{
   width: 112px;
 }
@@ -37,9 +33,6 @@ a{
   padding-top: 10px;
   text-align: center;
   box-sizing: border-box;
-}
-.info{
-  height: 100px;
 }
 .nom{
   text-align: center;
@@ -195,9 +188,10 @@ h1, h2{
   display: none;
 }
 .scrolling-wrapper-flexbox {
-  display: flex;
+  display: inline-flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+  width: 100%;
 }
   .card {
     width: 85%;
@@ -207,6 +201,7 @@ h1, h2{
     border-radius: 20px;
   }
   .ombredroite{
+    padding-left: 2px;
     width: 93%;
     background: #41C1BA;
     border-radius: 10px;
@@ -215,6 +210,7 @@ h1, h2{
 -moz-box-shadow: 23px 25px 14px -1px rgba(98,221,214,0.8);
   }
 .ombregauche{
+  padding-right: 2px;
   width: 93%;
   background: #41C1BA;
   border-radius: 10px;
@@ -223,7 +219,7 @@ h1, h2{
 -moz-box-shadow: -23px 25px 14px -1px rgba(98,221,214,0.8);
 }
 .flexbox{
-  display: inline-flex;
+  display:flex;
   justify-content: flex-end;
 }
 h3{
@@ -256,7 +252,7 @@ transition: ease 0.3s;
     border-radius: 10px;
 }
 .tabs input[type="radio"]:checked + label + .tab {
-    display: block;
+    display: inline-block;
 }
 .tabs .tab {
     order: 9;
@@ -264,7 +260,6 @@ transition: ease 0.3s;
     width: 100%;
     height: 100%;
     display: none;
-    padding: 1rem;
     background: #62DDD6;
     padding: 20px;
 }
@@ -276,6 +271,7 @@ transition: ease 0.3s;
   display: inline-block;
 }
 .pad li{
+  box-sizing: border-box;
   padding: 10px;
 }
 .cheval{
@@ -296,4 +292,46 @@ transition: ease 0.3s;
   color: white;
   background: url(img/informatique.jpg) no-repeat;
   background-size: cover;
+}
+@media screen and (min-width: 430px){
+.card{
+  width: 67%;
+}
+.tabs label{
+  padding: 3% 7%;
+}
+.tabs {
+  width: 70%;
+  margin: auto;
+}
+.tab{
+  text-align: center;
+}
+.pad, .inline{
+  border-radius: 20px;
+}
+}
+@media screen and (min-width:1023px){
+  .card{
+    width: 50%;
+  }
+.tabs label{
+  padding: 3% 7%;
+}
+.info{
+  text-align: center;
+}
+.tab{
+  text-align: center;
+}
+.tabs {
+  width: 70%;
+  margin: auto;
+}
+.pad, .inline{
+  border-radius: 20px;
+}
+.ombregauche{
+  width: 40%;
+}
 }
