@@ -30,7 +30,7 @@ a{
 }
 
 .info a{
-  width: calc(98%/5);
+  width:100%;
   font-size: 16px;
   text-align: center;
   color: #365B6D;
@@ -38,6 +38,9 @@ a{
   display: flex;
   padding:0px 10px ;
   box-sizing: border-box;
+}
+footer .info a{
+  width: calc(98%/5);
 }
 .nom p{
 color: #365B6D;
@@ -70,6 +73,7 @@ justify-content: center;
 }
 .nom{
   text-align: center;
+  backdrop-filter: blur(5px);
 }
 nav{
   z-index: 1;
@@ -115,7 +119,6 @@ h1, h2{
 .nav-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 62px;
 }
 
@@ -240,9 +243,12 @@ h1, h2{
     border-radius: 45px;
     box-sizing: border-box;
   }
+  section{
+   width: 100%;
+  }
   .ombredroite{
-    padding-left: 2px;
-    width: 93%;
+    padding: 10px;
+    width: 85%;
     background: #F2F1EC;
     border-radius: 10px;
     box-shadow: 23px 25px 14px -1px rgba(98,221,214,0.8);
@@ -314,6 +320,7 @@ color: #365B6D;
 .pad li{
   box-sizing: border-box;
   padding: 10px;
+  list-style: none;
 }
 .cheval{
   color: white;
