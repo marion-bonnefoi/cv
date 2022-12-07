@@ -340,6 +340,12 @@ transition: ease 0.3s;
 .ombregauche{
   width: 60%;
 }
+header{
+  background: url(img/fond.jpg) no-repeat;
+  background-size: cover;
+  width: 100%;
+  flex-direction: column;
+}
 }
 @media screen and (min-width:1023px){
 header{
@@ -347,10 +353,21 @@ header{
   background-size: cover;
   width: 100%;
   flex-direction: column;
-
 }
 header div{
   margin: auto;
+}
+main{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+#présentation{
+  order: -1;
+  width: 50%;
+}
+#formation{
+  order: -1;
+  width: 50%;
 }
 .nom{
   margin-bottom: 0;
@@ -374,10 +391,13 @@ header div{
 .pad, .inline{
   border-radius: 20px;
 }
-.ombregauche{
-  width: 40%;
+.ombregauche, .ombredroite{
+  width: 70%;
 }
-.ombredroite{
- width: 40%;
+#competence{
+  width: 100%;
+}
+footer .info a{
+  width: 50%;
 }
 }
