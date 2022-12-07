@@ -9,13 +9,14 @@ p, a, li{
   font-size: 22px;
 }
 h1, h2{
-  color: white;
+  color: #365B6D;
   font-family:'Archivo', sans-serif;
   font-size: 50px;
 }
 h3{
   font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
+  font-size: 35px;
+  color: #365B6D;
 }
 a{
   display: inline-block;
@@ -25,33 +26,38 @@ a{
 .info{
   height: 100%;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 }
+
 .info a{
-  width: 100%;
+  width: calc(98%/5);
   font-size: 16px;
   text-align: center;
-  color: white;
+  color: #365B6D;
   text-decoration: none;
   display: flex;
   padding:0px 10px ;
   box-sizing: border-box;
 }
+.nom p{
+color: #365B6D;
+}
 .divCV{
-  width: 100%;
+  background: #62DDD6;
+  width: 80%;
   height: 75px;
   display: flex;
   border-radius: 20px;
-  border: solid 5px white;
+  border: solid 5px #365B6D;
 justify-content: center;
 }
 .divCV .cv{
   display: inline-flex;
   align-items: center;
   font-size: 16px;
+  text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  color: #365B6D;
 }
 .divCV .cv img{
   height: 75px;
@@ -71,16 +77,13 @@ nav{
   top: 0;
   background: #41C1BA;
 }
- nav div{
-    background: #41C1BA;
-    width: 100vh;
-}
 footer{
   background-color:#41C1BA;
 }
 header{
   background-color:#41C1BA;
-  display: inline-flex;
+  display:flex;
+  align-items: center;
   height: 100vh;
   flex-wrap: wrap;
     justify-content: center;
@@ -89,6 +92,12 @@ h1, h2{
   margin: 0;
   padding: 10px 0;
   box-sizing: border-box;
+}
+.info span{
+  display: none;
+}
+.logo span{
+  display: none;
 }
 
 
@@ -101,7 +110,6 @@ h1, h2{
 
 .navbar {
   width: 100%;
-  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
 }
 
 .nav-container {
@@ -113,6 +121,7 @@ h1, h2{
 
 .navbar .menu-items {
   display: flex;
+  background: #41C1BA;
 }
 
 .navbar .nav-container li {
@@ -129,13 +138,14 @@ h1, h2{
 .navbar .nav-container a:hover{
     font-weight: bolder;
 }
-
-.nav-container {
-  display: block;
-  position: relative;
-  height: 60px;
+.logo {
+  position: absolute;
+  top: 0;
+  right: 15px;
 }
-
+.logo img{
+  height: 50px;
+}
 .nav-container .checkbox {
   position: absolute;
   display: block;
@@ -148,6 +158,9 @@ h1, h2{
   cursor: pointer;
 }
 
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
 .nav-container .hamburger-lines {
   display: block;
   height: 26px;
@@ -267,12 +280,13 @@ text-align: center;
 display: flex;
 justify-content: center;
 align-items: center;
-padding: 7% 10%;
+padding: 7% 14%;
 margin-right: 0.2rem;
 cursor: pointer;
 background-color: #F2F1EC;
 font-weight: bold;
 transition: ease 0.3s;
+color: #365B6D;
 }
 .tabs input[type="radio"]:checked + label {
     background: #62DDD6;
@@ -327,6 +341,12 @@ transition: ease 0.3s;
 .tabs label{
   padding: 3% 7%;
 }
+section{
+  width: 100%;
+}
+footer{
+  width: 100%;
+}
 .tabs {
   width: 70%;
   margin: auto;
@@ -357,7 +377,11 @@ header{
 header div{
   margin: auto;
 }
+footer{
+  width: 100%;
+}
 main{
+  width: 100%;
   display: inline-flex;
   flex-wrap: wrap;
 }
@@ -394,10 +418,48 @@ main{
 .ombregauche, .ombredroite{
   width: 70%;
 }
-#competence{
+section{
   width: 100%;
 }
 footer .info a{
-  width: 50%;
+height: 100%;;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+footer .info span{
+  display: inline-block;
+  color: #365B6D;
+}
+.logo{
+  display: none;
+}
+.hamburger-lines{
+  display: none;
+}
+.nav-container{
+  display: inline-flex;
+  height: 75px;
+  background:#41C1BA;
+}
+.navbar .menu-items{
+  display: inline-flex;
+  transform: none;
+  margin: 0;
+  height: 100%;
+}
+.navbar .nav-container li {
+  width: 19%;
+display: inline-flex;
+box-sizing: border-box;
+border-right: solid black 2px;
+white-space: normal;
+justify-content: center;
+align-items: flex-end;
+}
+.container{
+  max-width: none;
+}
+.divCV{
+  width: 40%;
 }
 }
