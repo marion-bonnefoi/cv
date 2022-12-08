@@ -4,7 +4,6 @@
 body{
   margin:0;
 }
-
 p, a, li{
   font-family: 'Open Sans', sans-serif;
   font-size: 22px;
@@ -22,14 +21,12 @@ h3{
 a{
   display: inline-block;
   height:74px;
-
 }
 .info{
   height: 100%;
   display: flex;
   align-items: center;
 }
-
 .info a{
   width:100%;
   font-size: 16px;
@@ -221,24 +218,24 @@ h1, h2{
   overflow-x: auto;
   width: 100%;
 }
-  .card {
-    width: 85%;
-    flex: 0 0 auto;
-    background: #F2F1EC;
-    border: transparent 10px solid;
-    border-radius: 45px;
-    box-sizing: border-box;
-  }
-  section{
-   width: 100%;
-  }
-  .ombredroite{
-    padding: 10px;
-    width: 85%;
-    background: #F2F1EC;
-    border-radius: 10px;
-    box-shadow: 23px 25px 14px -1px rgba(98,221,214,0.8);
-  }
+.card {
+  width: 85%;
+  flex: 0 0 auto;
+  background: #F2F1EC;
+  border: transparent 10px solid;
+  border-radius: 45px;
+  box-sizing: border-box;
+}
+section{
+ width: 100%;
+}
+.ombredroite{
+  padding: 10px;
+  width: 85%;
+  background: #F2F1EC;
+  border-radius: 10px;
+  box-shadow: 23px 25px 14px -1px rgba(98,221,214,0.8);
+}
 .ombregauche{
   padding-right: 2px;
   width: 93%;
@@ -265,32 +262,32 @@ text-align: center;
   display: none;
 }
 .tabs label{
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 7% 14%;
-margin-right: 0.2rem;
-cursor: pointer;
-background-color: #F2F1EC;
-font-weight: bold;
-transition: ease 0.3s;
-color: #365B6D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7% 14%;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background-color: #F2F1EC;
+  font-weight: bold;
+  transition: ease 0.3s;
+  color: #365B6D;
 }
 .tabs input[type="radio"]:checked + label {
-    background: #62DDD6;
-    border-radius: 10px;
+  background: #62DDD6;
+  border-radius: 10px;
 }
 .tabs input[type="radio"]:checked + label + .tab {
-    display: inline-block;
+  display: inline-block;
 }
 .tabs .tab {
-    order: 9;
-    flex-grow: 1;
-    width: 100%;
-    height: 100%;
-    display: none;
-    background: #62DDD6;
-    padding: 20px;
+  order: 9;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: #62DDD6;
+  padding: 20px;
 }
 .tab li img{
   width: 70px;
@@ -358,17 +355,17 @@ header{
 }
 }
 @media screen and (min-width:1023px){
-  nav{
-    position: fixed;
-    width: 100%;
-    background: none;
-  }
-  .nav-container{
-    background: none;
-  }
+nav{
+  position: fixed;
+  width: 100%;
+  background: none;
+}
+.nav-container{
+  background: none;
+}
 .navbar  .menu-items{
-    background: none;
-  }
+  background: none;
+}
 header{
   background: url(img/fond.jpg) no-repeat;
   background-size: cover;
@@ -392,8 +389,8 @@ main{
   order: -1;
   width: 50%;
 }
-  .card{
-    width: 50%;
+.card{
+  width: 50%;
   }
 .tabs label{
   padding: 3% 7%;
@@ -418,7 +415,7 @@ section{
   width: 100%;
 }
 footer .info a{
-height: 100%;;
+  height: 100%;;
   display: inline-flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -447,12 +444,12 @@ footer .info span{
 .navbar .nav-container li {
   width: 19%;
   color: #365B6D;
-display: inline-flex;
-box-sizing: border-box;
-border-right: solid black 2px;
-white-space: normal;
-justify-content: center;
-align-items: flex-end;
+  display: inline-flex;
+  box-sizing: border-box;
+  border-right: solid black 2px;
+  white-space: normal;
+  justify-content: center;
+  align-items: flex-end;
 }
 .container{
   max-width: none;
