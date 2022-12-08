@@ -473,4 +473,7 @@ align-items: flex-end;
 .nav-container .checkbox{
   display: none;
 }
+.navbar .nav-container .nobordure{
+  border-right: none;
+}
 }
