@@ -124,11 +124,14 @@ h1, h2{
 .navbar .nav-container li {
   list-style: none;
 }
+.navbar .nav-container li a{
+  font-size: 35px;
+  padding: 30px;
+}
 .navbar .nav-container a {
   text-decoration: none;
   color: #0e2431;
   font-weight: 500;
-  font-size: 1.2rem;
 }
 .navbar .nav-container a:hover{
     font-weight: bolder;
@@ -354,17 +357,27 @@ header{
   background-size: cover;
   width: 100%;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 }
 @media screen and (min-width:1023px){
+  nav{
+    position: fixed;
+    width: 100%;
+    background: none;
+  }
+  .nav-container{
+    background: none;
+  }
+.navbar  .menu-items{
+    background: none;
+  }
 header{
   background: url(img/fond.jpg) no-repeat;
   background-size: cover;
   width: 100%;
   flex-direction: column;
-}
-header div{
-  margin: auto;
+  justify-content: space-evenly;
 }
 footer{
   width: 100%;
@@ -381,9 +394,6 @@ main{
 #formation{
   order: -1;
   width: 50%;
-}
-.nom{
-  margin-bottom: 0;
 }
   .card{
     width: 50%;
@@ -428,7 +438,6 @@ footer .info span{
 .nav-container{
   display: inline-flex;
   height: 75px;
-  background:#41C1BA;
 }
 .navbar .menu-items{
   display: inline-flex;
@@ -438,6 +447,7 @@ footer .info span{
 }
 .navbar .nav-container li {
   width: 19%;
+  color: #365B6D;
 display: inline-flex;
 box-sizing: border-box;
 border-right: solid black 2px;
@@ -450,5 +460,15 @@ align-items: flex-end;
 }
 .divCV{
   width: 40%;
+}
+.navbar .nav-container li a{
+  font-size: 30px;
+  padding: 0;
+}
+.nav-container .hamburger-lines{
+  display: none;
+}
+.nav-container .checkbox{
+  display: none;
 }
 }
