@@ -200,7 +200,7 @@ h1, h2{
 .menu{
   height: 0;
 }
-.nav-container input[type="checkbox"]:checked ~ .menu-items {
+ .nav-container input[type="checkbox"]:checked ~ .menu-items {
   transform: translateX(0);
 }
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
@@ -212,6 +212,7 @@ h1, h2{
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   transform: rotate(-45deg);
 }
+
 .scrolling-wrapper-flexbox {
   display: inline-flex;
   flex-wrap: nowrap;
